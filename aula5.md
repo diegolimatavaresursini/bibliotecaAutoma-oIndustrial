@@ -1,0 +1,1 @@
+Na aula 5, conversamos sobre o app desktop cade simu e falamos sobre o mercado de trabalho. Resumão no ppt, link: https://docs.google.com/presentation/d/1qusjEnVuaSIrAH2zD8d6_aX1LNj-c0K-RBBrGHDwhrg/edit?usp=sharing
