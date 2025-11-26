@@ -43,3 +43,7 @@ Similar ao assembly
 ------------------------------------------------------------
 menções honrosas>>>
 podemos encontrar também python, c++, c, entre outras, dependendo da empresa.
+
+---------
+
+resumo do ptt em: https://docs.google.com/presentation/d/17Mp6YXlvr2xiJSx1RJ4VP37huMaioqMXIn8DJWBpKDo/edit?usp=sharing
