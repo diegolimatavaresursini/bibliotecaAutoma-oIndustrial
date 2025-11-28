@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚙️ Automação Industrial do Lab365</title>
+    <style>
+        /* ==================================== */
+        /* CSS BÁSICO PARA O ESTILO GEMINI/NOTION */
+        /* ==================================== */
+
+        :root {
+            /* Cores Escuras do Gemini/Notion */
+            --cor-fundo: #1E1F22;
+            --cor-card: #282A2E;
+            --cor-texto-principal: #E8EAED;
+            --cor-texto-secundario: #B8BCC0;
+            --cor-acento: #4285F4; /* Azul do Google/Tecnologia */
+            --cor-link: #8AB4F8;
+            --cor-borda: #3C4043;
+        }
+
+        body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto-principal);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            padding: 40px 20px;
+        }
+
+        /* TÍTULO PRINCIPAL */
+        header {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--cor-borda);
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: var(--cor-acento);
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
+        }
+
+        /* SEÇÕES DE CONTEÚDO (ESTILO CARTÃO) */
+        .section-card {
+            background-color: var(--cor-card);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--cor-borda);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+        }
+
+        /* SUBTÍTULOS E TEXTOS */
+        h2 {
+            color: var(--cor-texto-principal);
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--cor-acento);
+            padding-bottom: 10px;
+            margin-top: 0;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: var(--cor-acento);
+            font-size: 1.3em;
+            margin-top: 20px;
+        }
+
+        p, ul {
+            color: var(--cor-texto-secundario);
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        ul li::before {
+            content: '🔹';
+            color: var(--cor-acento);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* IMAGENS (FUTURISTAS) */
+        .futuristic-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+            object-fit: cover;
+            opacity: 0.85;
+            transition: opacity 0.3s ease;
+        }
+
+        .futuristic-image:hover {
+            opacity: 1;
+        }
+
+        /* LINKS E GITHUB */
+        a {
+            color: var(--cor-link);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--cor-acento);
+            text-decoration: underline;
+        }
+
+        .github-link {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: rgba(66, 133, 244, 0.2); /* Fundo sutil para o link */
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .github-link:hover {
+            background-color: rgba(66, 133, 244, 0.4);
+        }
+
+        /* UTILIDADES JS */
+        .next-step {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--cor-borda);
+            color: var(--cor-texto-secundario);
+            font-style: italic;
+        }
+
+        .next-step button {
+            background-color: var(--cor-acento);
+            color: var(--cor-texto-principal);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-left: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .next-step button:hover {
+            background-color: #357AE8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p style="color: var(--cor-link); font-size: 1.1em; margin-bottom: 0;">PÁGINA DE ESTUDOS BÁSICOS</p>
+            <h1>⚙️ Automação Industrial do Lab365</h1>
+        </header>
+
+        <section id="introducao" class="section-card">
+            <h2>🚀 Introdução à Automação Industrial</h2>
+            <p>A Automação Industrial é o uso de **sistemas de controle** (como computadores, CLPs, ou robôs) e **tecnologias da informação** para gerenciar e controlar processos e máquinas na indústria, substituindo o trabalho manual por operações automatizadas. O objetivo principal é aumentar a **produtividade**, a **qualidade**, a **segurança** e a **eficiência**.</p>
+            
+            <img src="https://via.placeholder.com/800x300/4285F4/FFFFFF?text=Fábrica+Futurista+%28Robôs+e+Conexão%29" alt="Imagem de um chão de fábrica futurista com braços robóticos e esteiras transportadoras" class="futuristic-image">
+            
+            <p><strong>Palavras-chave:</strong> Controle, Eficiência, Robótica, Manufatura Avançada, Indústria 4.0.</p>
+            <a href="https://github.com/lab365/automacao-industrial-introducao" target="_blank" class="github-link">🔗 Acessar Material no GitHub</a>
+        </section>
+
+        <section id="principios" class="section-card">
+            <h2>🧠 Princípios de Sistemas de Controle</h2>
+            <p>O coração da automação reside nos **sistemas de controle**. Eles funcionam em um **loop** contínuo: **Medição** $\rightarrow$ **Comparação** $\rightarrow$ **Cálculo** $\rightarrow$ **Ação**.</p>
+
+            <h3>1. O Loop de Controle</h3>
+            <ul>
+                <li>**Sensores (Medição):** Coletam dados do processo (temperatura, pressão, nível).</li>
+                <li>**Controlador (Comparação e Cálculo):** Dispositivo central (como um **CLP**) que recebe o dado do sensor, compara com um **Set Point** e calcula a ação necessária.</li>
+                <li>**Atuadores (Ação):** Dispositivos que executam o comando do controlador (válvulas, motores).</li>
+            </ul>
+
+            <h3>2. Controle em Malha Aberta vs. Malha Fechada</h3>
+            <p>A representação de um sistema de **Malha Fechada (Feedback)** é fundamental:</p>
+            <img src="https://via.placeholder.com/800x200/282A2E/8AB4F8?text=Diagrama+de+Blocos+de+Controle+em+Malha+Fechada" alt="Diagrama de blocos de um sistema de controle em malha fechada (Feedback)" class="futuristic-image">
+
+            <a href="https://github.com/lab365/automacao-industrial-principios-controle" target="_blank" class="github-link">🔗 Acessar Material no GitHub</a>
+        </section>
+
+        <section id="clp" class="section-card">
+            <h2>💻 Hardware Essencial: O CLP</h2>
+            <p>O **CLP (Controlador Lógico Programável)** é o cérebro da automação. É um computador industrial robusto, que executa programas lógicos de controle de processos.</p>
+
+            <h3>Estrutura Básica de um CLP</h3>
+            <ul>
+                <li>**CPU:** Executa a lógica do programa.</li>
+                <li>**Módulos de I/O (Entrada/Saída):** Conexão com sensores e atuadores.</li>
+                <li>**Fonte de Alimentação:** Fornece energia para o sistema.</li>
+            </ul>
+            <p><strong>Linguagem de Programação:</strong> A mais comum é a **Ladder Diagram (LD)**, que se assemelha a diagramas de circuitos elétricos.</p>
+
+            <img src="https://via.placeholder.com/800x250/1E1F22/E8EAED?text=Controlador+Lógico+Programável+%28PLC%29+com+Módulos" alt="Imagem de um Controlador Lógico Programável (CLP) com módulos de I/O conectados" class="futuristic-image">
+
+            <a href="https://github.com/lab365/automacao-industrial-clp-e-hardware" target="_blank" class="github-link">🔗 Acessar Material no GitHub</a>
+        </section>
+
+        <section id="conectividade" class="section-card">
+            <h2>🌐 Conectividade e Indústria 4.0</h2>
+            <p>A automação moderna envolve a **conexão** de máquinas, sistemas e pessoas. Este é o conceito central da **Indústria 4.0** e da **Internet Industrial das Coisas (IIoT)**.</p>
+
+            <h3>Comunicação em Redes Industriais</h3>
+            <p>Protocolos como **Modbus**, **Profibus** e **OPC UA** permitem que CLPs e sistemas SCADA troquem informações de forma padronizada.</p>
+
+            <h3>O Papel do SCADA/IHM</h3>
+            <p>O **SCADA** permite a gestão e visualização de dados de múltiplos processos em uma área ampla, facilitando a **tomada de decisão**.</p>
+            
+            <img src="https://via.placeholder.com/800x400/282A2E/4285F4?text=Painel+SCADA+Monitorando+Dados+da+Fábrica" alt="Imagem de um painel de monitoramento SCADA com gráficos e métricas da fábrica" class="futuristic-image">
+            
+            <a href="https://github.com/lab365/automacao-industrial-redes-i40" target="_blank" class="github-link">🔗 Acessar Material no GitHub</a>
+        </section>
+
+        <footer class="next-step">
+            <p>Estude os fundamentos e comece a programar!</p>
+            <p>Gostaria de um tutorial básico de programação Ladder Diagram?</p>
+            <button onclick="mostrarProximoPasso()">Sim, Quero Ver!</button>
+        </footer>
+    </div>
+
+    <script>
+        function mostrarProximoPasso() {
+            alert('Excelente! O próximo passo é um tutorial sobre Ladder Diagram, a linguagem de programação mais comum em CLPs.');
+            // Aqui você poderia redirecionar o usuário ou carregar o próximo conteúdo dinamicamente.
+            // Ex: window.location.href = "tutorial_ladder.html";
+        }
+    </script>
+</body>
+</html>
